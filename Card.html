@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ga+Maamli&family=Margarine&family=Varela+Round&display=swap" rel="stylesheet">
+    <style>
+        section{
+            display: flex;
+            justify-content: center;
+        }
+        body{
+            background: radial-gradient(circle, rgba(242,215,227,1) 0%, rgba(255,82,164,1) 100%);
+        }
+        p{
+            font-family: "Varela Round", sans-serif;
+        }
+        .container{
+            background: rgba(255, 255, 255, 0.1);            
+            width:400px;
+            height: 500px;
+            border-radius: 50px;
+            margin-top: 50px;
+            backdrop-filter: blur(10px); 
+            /*-webkit-backdrop-filter: blur(10px);*/
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .background{
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            z-index: 1;
+        }
+        .profile-pic{
+            width: 300px;
+            object-fit: cover;
+            position: relative;
+            left: 45px;
+            bottom: 120px;
+        }
+        .tittle{
+            position: relative;
+            text-align: center;
+            bottom: 150px;
+            left: 5px;
+            font-family: "Varela Round", sans-serif;
+        }
+        .occupation{
+            text-align: center;
+            position: relative;
+            bottom: 165px;
+            font-size: 15px;
+        }
+        .country {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            bottom: 185px;
+        }
+        .country img{
+            object-fit: cover;
+            height: 13px;
+            margin: 5px;
+        }
+        .country p{
+            color: Gray;
+        }
+        
+        .stats{
+            background-color: Silver	;
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+            position: relative;
+            bottom: 182px;
+            font-family: "Varela Round", sans-serif;
+        }
+        .stats div {
+            text-align: center;
+        }
+        .stats .number {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .stats .label {
+            font-size: 14px;
+        }
+        .button{
+            display: flex;
+            justify-content: center;
+            position: absolute;
+            bottom: 0px;
+            width: 100%;
+        }
+        button{
+            background: radial-gradient(circle, rgba(242,215,227,1) 0%, rgba(255,175,213,1) 100%);
+            padding: 20px;
+            border: none;
+            font-family: "Varela Round", sans-serif;
+            cursor: pointer;
+            width: 500px;
+            font-family: "Varela Round", sans-serif;
+            font-size: 20px;
+
+        }
+
+        button:hover {
+            background: radial-gradient(circle, rgba(242,215,227,1) 2%, rgba(255,37,140,1) 100%);
+        }
+
+
+    </style>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <img class="background" src="https://i.pinimg.com/564x/c1/6b/28/c16b28bb7133c648492ce22893adcf61.jpg" alt="IMAGEN">
+            <img class="profile-pic" src="img.png" alt="">
+            <h1 class="tittle">Ana Sofia Suarez Arismendy</h1>
+            <p class="occupation">computer engineering student</p>
+            <div class="country">
+                <img src="https://i.pinimg.com/564x/62/1f/3b/621f3bfeb6fbf653236fa2637199831b.jpg" alt="">
+                <p>Colombia</p>
+            </div>
+            <div class="stats">
+                <div>
+                    <div class="number">2K</div>
+                    <div class="label">Followers</div>
+                </div>
+                <div>
+                    <div class="number">200</div>
+                    <div class="label">Follows</div>
+                </div>
+            </div>
+            <div class="button">
+                <button>Follow</button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
